@@ -20,6 +20,7 @@
             }
             return this;
         }
+        var N = options || 10;
 
         // Create custom select
         this.each(function() {
@@ -45,7 +46,7 @@
 
             $dropDown.find('.current').html($options.filter(':selected').text());
 
-            $.each(transpose(divide($options.get(), 2)), function() {
+            $.each(transpose(divide($options.get(), N)), function() {
                 var tr = $('<tr></tr>');
                 $.each(this, function(_, option) {
                     if (option) {
@@ -105,7 +106,7 @@
 
             if ($dropDown.hasClass('open')) {
                 $dropDown.find('.focus').removeClass('focus').end().
-                           find('.selected').addClass('focus');
+                          find('.selected').addClass('focus');
             } else {
                 $dropDown.focus();
             }
