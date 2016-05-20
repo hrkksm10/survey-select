@@ -5,26 +5,55 @@
     <title></title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/survey-select.css">
+    <style type="text/css">
+        body { background-color: #fcf7cf; }
+    </style>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/survey-select.js"></script>
     <script>
         $(document).ready(function() {
-            $('select').surveySelect();
+            $('select').surveySelect(10);
         });
     </script>
 </head>
 <body>
-<form class="form-group">
-<div style="width: 200px">
-<select>
-    <option>1</option>
-    <option>233333333333kkkk</option>
-    <option>2</option>
-    <option selected>2777777</option>
-    <option>2</option>
-</select>
-</div>
-</form>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+            <form class="form-group">
+                <div class="input-group">
+                    <select class="form-control">
+                        <option>ch1</option>
+                        <option>ch2</option>
+                        <option>ch3</option>
+                        <option selected>ch4</option>
+                        <option>ch5</option>
+                        <option>ch6</option>
+                        <option>ch7</option>
+                        <option>ch8</option>
+                        <option>ch9</option>
+                        <option>ch10</option>
+                        <option>ch11</option>
+                        <option>ch12</option>
+                        <option>ch13</option>
+                        <option>ch14</option>
+                        <option>ch15</option>
+                        <option>ch16</option>
+                        <option>ch17</option>
+                        <option>ch18</option>
+                        <option>ch19</option>
+                        <option>ch20</option>
+                    </select>
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary" type="button">
+                            OK
+                        </button>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

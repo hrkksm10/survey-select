@@ -36,7 +36,6 @@
 
             var $dropDown = $('<div></div>').
                                 addClass('surveys').
-                                addClass($el.attr('class') || '').
                                 addClass($el.attr('disabled') ? 'disabled' : '').
                                 attr('tabindex', $el.attr('disabled') ? null : '0').
                                 html('<span class="current"></span><table class="list"><tbody></tbody></table>').

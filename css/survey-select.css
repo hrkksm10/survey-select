@@ -1,0 +1,95 @@
+.surveys {
+  display: table-cell;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #fff;
+  border-radius: 5px;
+  border: solid 1px #e8e8e8;
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  float: left;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  height: 35px;
+  line-height: 33px;
+  outline: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  text-align: left !important;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  white-space: nowrap; }
+  .surveys:hover {
+    border-color: #dbdbdb; }
+  .surveys:active, .surveys:focus {
+    border-color: #999; }
+  .surveys:after {
+    border-bottom: 2px solid #999;
+    border-right: 2px solid #999;
+    content: '';
+    display: block;
+    height: 5px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform-origin: 66% 66%;
+    transform: rotate(45deg);
+    transition: all 0.15s ease-in-out;
+    width: 5px; }
+  .surveys.open {
+    border-color: #999; }
+    .surveys.open:after {
+      transform: rotate(-135deg); }
+    .surveys.open .list {
+      display: block;
+      pointer-events: auto;
+      transform: scale(1) translateY(0); }
+  .surveys.disabled {
+    border-color: #ededed;
+    color: #999;
+    pointer-events: none; }
+    .surveys.disabled:after {
+      border-color: #cccccc; }
+  .surveys .list {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+    box-sizing: border-box;
+    margin-top: 4px;
+    display: none;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform-origin: 50% 0;
+    transform: scale(0.75) translateY(-17.5px);
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9; }
+    .surveys .list:hover .option:not(:hover) {
+      background-color: transparent !important; }
+  .surveys .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 33px;
+    list-style: none;
+    min-height: 33px;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    transition: all 0.2s; }
+    .surveys .option:hover {
+      background-color: #f6f6f6; }
+    .surveys .option.disabled {
+      background-color: transparent;
+      color: #999;
+      cursor: default; }
+
+/*# sourceMappingURL=survey-select.css.map */

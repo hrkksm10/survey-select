@@ -60,7 +60,7 @@ $arrow_color: $gray !default;
     transition: all 0.15s ease-in-out;
     width: 5px;
   }
-  
+
   &.open {
     border-color: $primary_light;
     &:after {
