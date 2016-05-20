@@ -85,8 +85,10 @@
     padding-right: 15px;
     text-align: left;
     transition: all 0.2s; }
-    .surveys .option:hover {
+    .surveys .option:hover, .surveys .option.focus, .surveys .option.selected.focus {
       background-color: #f6f6f6; }
+    .surveys .option.selected {
+      font-weight: bold; }
     .surveys .option.disabled {
       background-color: transparent;
       color: #999;

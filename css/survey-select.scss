@@ -114,8 +114,11 @@ $arrow_color: $gray !default;
     padding-right: $dropdown_padding;
     text-align: left;
     transition: all 0.2s;
-    &:hover {
+    &:hover, &.focus, &.selected.focus {
       background-color: $gray_lighter;
+    }
+    &.selected {
+      font-weight: bold;
     }
     &.disabled {
       background-color: transparent;
