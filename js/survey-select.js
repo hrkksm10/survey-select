@@ -45,7 +45,7 @@
 
             $dropDown.find('.current').html($options.filter(':selected').text());
 
-            $.each(transpose(divide($options.get(), N)), function() {
+            $.each(transpose(divide($options.filter("[value!='']").get(), N)), function() {
                 var tr = $('<tr></tr>');
                 $.each(this, function(_, option) {
                     if (option) {
